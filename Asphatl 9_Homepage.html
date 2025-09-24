@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: ReJends - Homepage</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="Subscription_page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Asphatl 9_Homepage.html">
+                <div class="logo">
+                    <span>G</span>
+                    <span>GAMEFOLT</span>
+                </div>
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="Asphatl 9_Products.html">PRODUCTS</a></li>
+                    <li><a href="Asphatl 9_News.html">NEWS</a></li>
+                    <li><a href="Asphatl 9_Event.html">EVENT</a></li>
+                    <li><a href="#" id="openPopUpButton" class="subscribe-button">Subscribe</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-icon"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <h1>ASPHATL 9</h1>
+            <p>Experience the ultimate adrenaline rush with Asphalt 9: Legends, the premier mobile racing game that redefines the genre. Featuring over 200 high-performance cars from the world's top manufacturers like Ferrari, Porsche, and Lamborghini, Asphalt 9: Legends offers a stunning roster of vehicles to race, collect, and customize.</p>
+
+            <p>Tear through over 80 breathtaking tracks set in dynamic locations around the globe, from the bustling streets of Tokyo to the sun-soaked shores of the Caribbean. Each race is an explosive experience with gravity-defying stunts, precise drifting, and heart-pounding nitro boosts.</p>
+
+            <p>Whether you thrive on intense solo challenges or the thrill of multiplayer competition, Asphalt 9: Legends has something for every racing enthusiast. Dive into a rich single-player Career mode or join forces with players worldwide in real-time multiplayer races. Climb the leaderboards, unlock exclusive rewards, and participate in limited-time events that keep the excitement fresh and the stakes high.</p>
+                
+            <p>Customize your dream car with a variety of colors, rims, and more to stand out on the track. Harness the innovative TouchDrive™ controls for a more immersive racing experience, or take full control of your car with traditional tap-to-steer mechanics.</p>
+            
+            <p>Join a community of millions and become a racing legend in Asphalt 9: Legends. The race of your life awaits – are you ready to hit the road?</p>
+
+            <hr class="line">
+            <h2 class="tagline">
+                <span class="red">ARE YOU READY</span>
+                <span class="white">TO DOMINATE THE TRACK?</span>
+                <span class="red">JOIN US!</span>
+            </h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gamefolt and RJStudio. All right reserved.</p>
+    </footer>
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-button" id="closePopUpButton">&times;</span>
+            <form id="subscriptionForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+
+                <br>
+                <label for="confpass">Confirm Password</label>
+                <input type="password" id="confpass" name="confpass" placeholder="Confirm your password">
+
+                <br>
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Date of birth">
+
+                <br>
+                <label>Select Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" id="subscribeButton" onclick="validateData()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

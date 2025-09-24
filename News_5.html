@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: ReJends - Cyberpunk Update</title>
+    <link rel="stylesheet" href="News_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Subscription_page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Asphatl 9_Homepage.html">
+                <div class="logo">
+                    <span>G</span>
+                    <span>GAMEFOLT</span>
+                </div>
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="Asphatl 9_Products.html">PRODUCTS</a></li>
+                    <li><a href="Asphatl 9_News.html">NEWS</a></li>
+                    <li><a href="Asphatl 9_Event.html">EVENT</a></li>
+                    <li><a href="#" id="openPopUpButton" class="subscribe-button">Subscribe</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-icon"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cover-image">
+            <img src="newyear-news5.jpg" alt="Cover Image">
+        </div>
+
+        <h1>Rev Your Engines for Asphatl 9: ReJends' Explosive New Year Bash!</h1>
+
+        <div class="news-details">
+            <span>Posted on January 1, 2024</span>
+            <br>
+            <span><i class="fas fa-clock"></i> 5 min</span>
+        </div>
+
+        <hr class="line">
+
+        <p>As the New Year approaches, Asphatl 9: ReJends is gearing up to deliver the most electrifying celebration yet. Gamefolt and RJStudio are thrilled to announce the "Explosive New Year Bash," a spectacular in-game event designed to kick off the new year with a bang.</p>
+
+        <p>From dazzling fireworks displays to high-octane races, the New Year Bash promises to be an unforgettable experience for all players. The event will feature a series of special races set against the backdrop of vibrant, night-time cityscapes illuminated by stunning pyrotechnics. The tracks are designed to challenge even the most skilled racers, with intricate turns, hidden shortcuts, and thrilling jumps.</p>
+            
+        <p>In addition to the exhilarating races, the New Year Bash will introduce an array of exclusive content. Players can look forward to unlocking new, limited-time vehicles adorned with festive liveries, and participating in time-limited challenges that offer unique rewards. Special in-game items, such as celebratory decals, nitro boosts, and customization options, will be up for grabs, making every race even more exciting.</p>
+            
+        <p>One of the highlights of the event is the introduction of the "New Year Showdown," a competitive tournament where players from around the globe can race head-to-head for the top spot on the leaderboard. Winners will receive prestigious prizes, including rare cars and exclusive in-game currency, cementing their status as racing legends in the Asphatl 9 community.</p>
+            
+        <p>Gamefolt and RJStudio have also planned a series of community events, encouraging players to share their most thrilling moments and epic victories on social media. Participants can earn additional rewards and have their content featured on official channels, fostering a vibrant and connected community.</p>
+            
+        <p>Asphatl 9: ReJends' Explosive New Year Bash is more than just an event—it's a celebration of speed, skill, and the joy of racing. Whether you're a seasoned veteran or a newcomer to the game, this event is the perfect opportunity to rev your engines, take on new challenges, and start the year with a burst of excitement.</p>
+            
+        <p>Mark your calendars and prepare for the ultimate racing extravaganza. The Explosive New Year Bash kicks off soon, so get ready to hit the tracks, set new records, and celebrate the New Year in style with Asphatl 9: ReJends. This is one event you won't want to miss!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gamefolt and RJStudio</p>
+    </footer>
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-button" id="closePopUpButton">&times;</span>
+            <form id="subscriptionForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+
+                <br>
+                <label for="confpass">Confirm Password</label>
+                <input type="password" id="confpass" name="confpass" placeholder="Confirm your password">
+
+                <br>
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Date of birth">
+
+                <br>
+                <label>Select Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" id="subscribeButton" onclick="validateData()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

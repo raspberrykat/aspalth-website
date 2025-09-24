@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('default.webp') no-repeat center center fixed;
+    background-color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span:first-child {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    color: #e6e6e6;
+    margin-right: 0.5em;
+    margin-left: 1em;
+}
+
+.logo span:last-child {
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    color: #e6e6e6;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 15em;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.search-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px;
+}
+
+.search-icon::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px;
+}
+
+.search button {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 0 1em;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin: 0 1em;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+main {
+    padding-left: 25em;
+    padding-right: 25em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    color: #ccc;
+    text-align: center;
+}
+
+main h1{
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-size: 3em;
+    font-weight: 300;
+    padding-top: 2em;
+}
+
+main p{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+}
+
+main h2{
+    padding-bottom: 3em;
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-size: 2em;
+    font-weight: 300;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.line {
+    margin: 10em 0;
+    padding-top: 0 10px;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: #5184eb;
+    color: #272727;
+    text-decoration: none;
+}
+
+.subscribe-button:hover {
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: small;
+}
+
+#gallery, #news, #esport-event, #subscription {
+    margin-top: 2em;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
+}

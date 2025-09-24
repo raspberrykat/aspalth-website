@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: ReJends - Cyberpunk Update</title>
+    <link rel="stylesheet" href="News_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Subscription_page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Asphatl 9_Homepage.html">
+                <div class="logo">
+                    <span>G</span>
+                    <span>GAMEFOLT</span>
+                </div>
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="Asphatl 9_Products.html">PRODUCTS</a></li>
+                    <li><a href="Asphatl 9_News.html">NEWS</a></li>
+                    <li><a href="Asphatl 9_Event.html">EVENT</a></li>
+                    <li><a href="#" id="openPopUpButton" class="subscribe-button">Subscribe</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-icon"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cover-image">
+            <img src="newcars-news3.jpg" alt="Cover Image">
+        </div>
+
+        <h1>Asphatl 9: ReJends Expands Car Roster with 10 New Luxury Models</h1>
+
+        <div class="news-details">
+            <span>Posted on March 24, 2024</span>
+            <br>
+            <span><i class="fas fa-clock"></i> 4 min</span>
+        </div>
+
+        <hr class="line">
+
+        <p>Revving Up the Excitement: Asphatl 9: ReJends Introduces 10 Stunning Additions to its Fleet of Luxury Cars</p>
+
+        <p>In a move that promises to ignite the passion of racing enthusiasts worldwide, Asphatl 9: ReJends, the acclaimed racing sensation, is gearing up for a monumental expansion. Buckle up as the game unveils 10 new luxury models, each meticulously crafted to deliver unparalleled speed, power, and style on the asphalt.</p>
+        
+        <p>From the sleek curves of exotic sports cars to the raw muscle of high-performance supercars, this latest update showcases the epitome of automotive excellence. Designed with precision and attention to detail, these new additions redefine what it means to dominate the race track in style.</p>
+            
+        <p> the scenes, Gamefolt and RJStudio have spared no effort in bringing these automotive marvels to life. With cutting-edge technology and a passion for perfection, they've created a roster of vehicles that will leave players breathless with anticipation.</p>
+        
+        <p>Get ready to experience the thrill of the race like never before as Asphatl 9: ReJends invites you to step into the driver's seat of these exquisite machines. Whether you're a seasoned veteran or a newcomer to the world of virtual racing, prepare to be swept away by the adrenaline-fueled excitement that awaits.</p>
+        
+        <p>Stay tuned as the countdown begins for the release of these 10 new luxury models, set to revolutionize the gaming landscape and reignite the spirit of competition. The road ahead has never looked more exhilarating.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gamefolt and RJStudio</p>
+    </footer>
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-button" id="closePopUpButton">&times;</span>
+            <form id="subscriptionForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+
+                <br>
+                <label for="confpass">Confirm Password</label>
+                <input type="password" id="confpass" name="confpass" placeholder="Confirm your password">
+
+                <br>
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Date of birth">
+
+                <br>
+                <label>Select Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" id="subscribeButton" onclick="validateData()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

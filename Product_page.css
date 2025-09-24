@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('product_bg.jpg') no-repeat center center fixed;
+    background-color: #333;
+    overflow-y: auto;
+    justify-content: center
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span:first-child {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    color: #e6e6e6;
+    margin-right: 0.5em;
+    margin-left: 1em;
+}
+
+.logo span:last-child {
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    color: #e6e6e6;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 15em;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.search-icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px;
+}
+
+.search-icon::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px;
+}
+
+.search button {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 0 1em;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+main {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+main h1{
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.general-info {
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    padding-top: 2em;
+    padding-left: 12em;
+    padding-right: 12em;
+    padding-bottom: 3em;
+    text-align: center;
+    color: white;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: #5184eb;
+    color: #272727;
+    text-decoration: none;
+}
+
+.subscribe-button:hover {
+    color: white;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-card {
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.car-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.car-class {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+.car-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: small;
+}
+
+#gallery, #news, #esport-event, #subscription {
+    margin-top: 2em;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white
+}

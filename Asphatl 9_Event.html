@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: ReJends - Esport Event</title>
+    <link rel="stylesheet" href="Event_page.css">
+    <link rel="stylesheet" href="Subscription_page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Asphatl 9_Homepage.html">
+                <div class="logo">
+                    <span>G</span>
+                    <span>GAMEFOLT</span>
+                </div>
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="Asphatl 9_Products.html">PRODUCTS</a></li>
+                    <li><a href="Asphatl 9_News.html">NEWS</a></li>
+                    <li><a href="Asphatl 9_Event.html">EVENT</a></li>
+                    <li><a href="#" id="openPopUpButton" class="subscribe-button">Subscribe</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-icon"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="esport-event">
+            <video controls>
+                <source src="Asphalt 9 - Lamborghini Revuelto Esports Challenge Trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="tagline">
+                <span class="white">JOIN</span>
+                <span class="red">OUR ESPORT</span>
+                <span class="white">EVENT!</span>
+            </h1>
+            <div class="event-info">
+                <p>Welcome to the exhilarating world of Asphatl 9: ReJends Esport Events! Here, the best racers from around the globe compete for glory, prestige, and amazing rewards.</p>
+
+                <p>Since the inception of our esport series, we have successfully hosted <span class="red">25 high-octane events</span>. Each event has pushed the boundaries of competitive racing, attracting top talent and thrilling spectators.</p>
+                    
+                <p>Our events have seen participation from <span class="red">over 10,000 racers</span> worldwide. These participants range from casual players to professional gamers, all vying for the top spot and showcasing their racing prowess.</p>
+                    
+                <p>The total prize pool across all events has reached an impressive <span class="red">$500,000</span>. Each event offers substantial rewards, with the prize distribution ensuring that top performers receive their due recognition and compensation.</p>
+                    
+                <p><span class="red">Across our 25 events, we have conducted a total of 250 races.</span> These races are held on various challenging tracks, each designed to test the skill and strategy of our competitors.</p>
+                    
+                <p>Our esports events are proudly supported by some of the biggest names in the industry. Our key sponsors include:</p>
+
+                <ol>
+                    <li>Razer - Leading provider of gaming hardware and accessories.</li>
+                    <li>Red Bull - Renowned energy drink brand known for supporting extreme sports.</li>
+                    <li>NVIDIA - Industry leader in graphics processing technology.</li>
+                    <li>Samsung - Innovator in consumer electronics and technology.</li>
+                    <li>Monster Energy - Popular energy drink brand with a history of supporting gaming and sports events.</li>
+                </ol>
+
+                <p>Together, these sponsors help us deliver a top-tier esports experience, ensuring that each event is memorable and competitive.</p>
+
+                <p>Whether you're a seasoned racer or a newcomer eager to test your skills, Asphatl 9: ReJends offers an unmatched esports platform. <span class="red">Stay tuned for upcoming events and get ready to race your way to the top!</span></p>
+                
+                <p>For more information, visit our official website or contact us at <span class="blue">esports@asphatl9.com</span>. See you on the track!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gamefolt and RJStudio</p>
+    </footer>
+    
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-button" id="closePopUpButton">&times;</span>
+            <form id="subscriptionForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+
+                <br>
+                <label for="confpass">Confirm Password</label>
+                <input type="password" id="confpass" name="confpass" placeholder="Confirm your password">
+
+                <br>
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Date of birth">
+
+                <br>
+                <label>Select Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" id="subscribeButton" onclick="validateData()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

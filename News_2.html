@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: ReJends - Cyberpunk Update</title>
+    <link rel="stylesheet" href="News_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Subscription_page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Asphatl 9_Homepage.html">
+                <div class="logo">
+                    <span>G</span>
+                    <span>GAMEFOLT</span>
+                </div>
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="Asphatl 9_Products.html">PRODUCTS</a></li>
+                    <li><a href="Asphatl 9_News.html">NEWS</a></li>
+                    <li><a href="Asphatl 9_Event.html">EVENT</a></li>
+                    <li><a href="#" id="openPopUpButton" class="subscribe-button">Subscribe</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-icon"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cover-image">
+            <img src="leaderboard-news2.jpg" alt="Cover Image">
+        </div>
+
+        <h1>Global Leaderboards and Exclusive Rewards Now Available in Asphatl 9: ReJends</h1>
+
+        <div class="news-details">
+            <span>Posted on April 8, 2024</span>
+            <br>
+            <span><i class="fas fa-clock"></i> 10 min</span>
+        </div>
+
+        <hr class="line">
+
+        <p>Exciting news for racing enthusiasts! Gamefolt and RJStudio have unveiled a thrilling new feature for their popular racing game, Asphatl 9: ReJends. With the latest update, players can now compete on Global Leaderboards and earn Exclusive Rewards, adding a new level of competition and incentive to the game.</p>
+
+        <p>
+            Introducing Global Leaderboards
+            <br>
+            The new global leaderboard system allows players from around the world to compete against each other for the top spots. This feature brings a new dimension to the game, where players' skills and strategies are put to the test on a global scale. Racers can now see how they stack up against the best in the world, fostering a more competitive and engaging environment.
+        </p>
+            
+        <p>
+            How It Works?
+            <br>
+            Players' scores from races, events, and challenges are automatically uploaded to the global leaderboards. The leaderboards are updated in real-time, so players can track their progress and see how they rank against their friends and other top racers worldwide. There are multiple categories, including overall rankings, weekly rankings, and specific event rankings, ensuring that there are many ways to climb the ranks.
+        </p>
+            
+        <p>
+            Exclusive Rewards
+            <br>
+            To motivate players to reach the top, Gamefolt and RJStudio have introduced a range of exclusive rewards. These rewards include unique cars, customization items, in-game currency, and more. High-ranking players will have the chance to unlock exclusive content that is not available through regular gameplay. This system not only rewards skill but also dedication and consistency.
+        </p>
+        <p>
+            Special Events and Tournaments
+            <br>
+            In addition to the regular leaderboards, the update introduces special events and tournaments that offer even more opportunities for players to earn rewards. These events are time-limited and feature unique challenges that require both speed and strategy. Winners of these events will earn special badges and exclusive items that showcase their achievements.
+        </p>
+        <p>
+            Get Started
+            <br>
+            To start competing on the global leaderboards, players simply need to update their game to the latest version. From there, they can participate in races, events, and challenges to earn points and climb the ranks. The new feature is designed to be accessible to all players, whether they are seasoned veterans or new to the game.
+        </p>
+        <p>About Asphatl 9: ReJends Asphatl 9: ReJends is a leading mobile racing game developed by Gamefolt and RJStudio. Known for its stunning graphics, diverse car roster, and intense gameplay, the game has built a large and passionate player base. With regular updates and new features, Asphatl 9: ReJends continues to set the standard for excellence in mobile racing games.</p>
+            
+        <p>Jump into the driver's seat, start your engines, and race your way to the top of the global leaderboards in Asphatl 9: ReJends. The competition is fierce, the rewards are exclusive, and the glory awaits!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gamefolt and RJStudio</p>
+    </footer>
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-button" id="closePopUpButton">&times;</span>
+            <form id="subscriptionForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+
+                <br>
+                <label for="confpass">Confirm Password</label>
+                <input type="password" id="confpass" name="confpass" placeholder="Confirm your password">
+
+                <br>
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Date of birth">
+
+                <br>
+                <label>Select Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" id="subscribeButton" onclick="validateData()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

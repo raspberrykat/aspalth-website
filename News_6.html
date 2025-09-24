@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: ReJends - Cyberpunk Update</title>
+    <link rel="stylesheet" href="News_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Subscription_page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Asphatl 9_Homepage.html">
+                <div class="logo">
+                    <span>G</span>
+                    <span>GAMEFOLT</span>
+                </div>
+            </a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="Asphatl 9_Products.html">PRODUCTS</a></li>
+                    <li><a href="Asphatl 9_News.html">NEWS</a></li>
+                    <li><a href="Asphatl 9_Event.html">EVENT</a></li>
+                    <li><a href="#" id="openPopUpButton" class="subscribe-button">Subscribe</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-icon"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cover-image">
+            <img src="snowtrack-news6.png" alt="Header Image">
+        </div>
+
+        <h1>Experience the Thrill of Asphatl 9: ReJends' Christmas Special on the Snowy Challenge Track!</h1>
+
+        <div class="news-details">
+            <span>Posted on December 25, 2023</span>
+            <br>
+            <span><i class="fas fa-clock"></i> 7 min</span>
+        </div>
+
+        <hr class="line">
+
+        <p>This holiday season, Asphatl 9: ReJends invites you to embrace the festive spirit with a heart-pounding new addition: the Snowy Challenge Track. As part of the game's Christmas Special, Gamefolt and RJStudio are excited to present a winter wonderland where racers can compete on a beautifully crafted, snow-covered course that promises excitement and thrills for all.</p>
+
+        <p>The Snowy Challenge Track is a visual spectacle, featuring twinkling holiday lights, towering Christmas trees, and festive decorations lining the raceway. But don't let the serene winter landscape fool you—this track is packed with icy turns, slippery slopes, and hidden shortcuts that will test even the most experienced racers' skills.</p>
+            
+        <p>In conjunction with the new track, Asphatl 9: ReJends is launching a series of holiday-themed events and challenges. Players can participate in time-limited races to earn exclusive holiday rewards, including festive car skins, special nitro boosts, and other unique customization options. Completing these challenges will not only enhance your racing experience but also add a touch of holiday cheer to your garage.</p>
+            
+        <p>One of the highlights of the Christmas Special is the "Winter Festival Tournament," where players can compete in a global showdown for top rankings and special prizes. This tournament is designed to bring the community together in the spirit of competition and celebration, offering unique rewards for those who rise to the top.</p>
+            
+        <p>In addition to racing events, the Christmas Special includes community-driven activities. Players are encouraged to share their most exciting moments and festive screenshots on social media using the hashtag #Asphatl9Holiday. Top entries will be featured on the official Asphatl 9 channels, and participants will have the chance to win in-game goodies.</p>
+            
+        <p>Gamefolt and RJStudio have meticulously designed the Snowy Challenge Track and accompanying events to provide an immersive and joyous experience. The Christmas Special is their way of thanking the Asphatl 9 community for their support and enthusiasm throughout the year.</p>
+            
+        <p>So, bundle up and get ready to race through a winter wonderland like no other. The Snowy Challenge Track is open now, and the Christmas Special is packed with events and rewards that you won't want to miss. Experience the thrill of high-speed racing combined with the magic of the holiday season in Asphatl 9: ReJends. Merry Christmas and happy racing!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gamefolt and RJStudio</p>
+    </footer>
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-button" id="closePopUpButton">&times;</span>
+            <form id="subscriptionForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+                <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter password">
+
+                <br>
+                <label for="confpass">Confirm Password</label>
+                <input type="password" id="confpass" name="confpass" placeholder="Confirm your password">
+
+                <br>
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Date of birth">
+
+                <br>
+                <label>Select Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div class="agree">
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" id="subscribeButton" onclick="validateData()">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>
