@@ -37,11 +37,12 @@ The website has five main pages:
 
 ---
 
-## Tech Stack  
-- **HTML5** – for website structure.  
-- **CSS3** – external stylesheet, flexbox/grid for layout, responsive design.  
-- **JavaScript** – for form validation and interactivity.  
-- **Figma** – for initial prototype design.  
+## Features  
+- Responsive header and navigation menu.  
+- Interactive hover effects and transitions.  
+- JavaScript-driven subscription form validation.  
+- Esport page with embedded video and sponsor showcase.  
+- Organized file structure with subdirectories. 
 
 ---
 
@@ -52,12 +53,11 @@ The website has five main pages:
 
 ---
 
-## Features  
-- Responsive header and navigation menu.  
-- Interactive hover effects and transitions.  
-- JavaScript-driven subscription form validation.  
-- Esport page with embedded video and sponsor showcase.  
-- Organized file structure with subdirectories.  
+## Tech Stack  
+- **HTML5** – for website structure.  
+- **CSS3** – external stylesheet, flexbox/grid for layout, responsive design.  
+- **JavaScript** – for form validation and interactivity.  
+- **Figma** – for initial prototype design. 
 
 ###
 
